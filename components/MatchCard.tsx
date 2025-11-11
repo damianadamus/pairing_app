@@ -1,20 +1,25 @@
 import { UserProfile } from "@/app/profile/page";
 import { calculateAge } from "@/lib/helpers/calculate-age";
 import Image from "next/image";
-export default function MatchCard({ user }: { user: UserProfile }) {
+export function MatchCard({user}: { user: UserProfile }) {
+    const avatarSrc =
+        user?.avatar_url && (user.avatar_url.startsWith("http") || user.avatar_url.startsWith("/"))
+            ? user.avatar_url
+            : "/images/default-avatar.png";
+
     return (
         <div className="relative w-full max-w-sm mx-auto">
             <div className="card-swipe aspect-[3/4] overflow-hidden">
                 <div className="relative w-full h-full">
                     <Image
-                        src={user.avatar_url}
-                        alt={user.full_name}
+                        src={avatarSrc}
+                        alt={user.full_name || "user avatar"}
                         fill
                         className={`object-cover transition-opacity duration-300`}
                         priority
                     />
 
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"/>
 
                     <div className="absolute bottom-0 left-0 right-0 p-6 text-white">
                         <div className="flex items-end justify-between">

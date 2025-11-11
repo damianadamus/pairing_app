@@ -3,7 +3,7 @@ import { getPotentialMatches, likeUser } from "@/lib/actions/matches";
 import { useEffect, useState } from "react";
 import { UserProfile } from "../profile/page";
 import { useRouter } from "next/navigation";
-import MatchCard from "@/components/MatchCard";
+import {MatchCard} from "@/components/MatchCard";
 import MatchButtons from "@/components/MatchButtons";
 import MatchNotification from "@/components/MatchNotification";
 
