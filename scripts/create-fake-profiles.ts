@@ -4,7 +4,7 @@ import "dotenv/config";
 
 // Configuration
 const SUPABASE_URL = "https://pzwjovgqdvgaegnnaqpi.supabase.co";
-const SUPABASE_SERVICE_ROLE_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InB6d2pvdmdxZHZnYWVnbm5hcXBpIiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTc2MjM3MDU0MCwiZXhwIjoyMDc3OTQ2NTQwfQ.rrXoDQInNVDvD_Ppj_d5x1_VxRgkWDXpH7Vl9Rwv-G8";
+const SUPABASE_SERVICE_ROLE_KEY = "my key from local";
 const PASSWORD = "password";
 
 // Initialize Supabase client with service role key

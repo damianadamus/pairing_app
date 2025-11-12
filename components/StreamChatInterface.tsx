@@ -13,7 +13,7 @@ import {
     useState,
 } from "react";
 import { Channel, Event, StreamChat } from "stream-chat";
-import { text } from "stream/consumers";
+// import { text } from "stream/consumers";
 import VideoCall from "./VideoCall";
 
 interface Message {
